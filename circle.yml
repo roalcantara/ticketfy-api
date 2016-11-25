@@ -1,3 +1,7 @@
 dependencies:
   pre:
     - gem install bundler --pre
+
+general:
+  artifacts:
+    - 'coverage'
