@@ -9,6 +9,7 @@ A Customer Support Ticket System API made with [Rails](http://rubyonrails.org/) 
 To run this project you need to have:
 
 * Ruby 2.3.1 - You can use [RVM](http://rvm.io)
+* [MySQL](https://www.mysql.com/)
 
 ## Setup the project
 
