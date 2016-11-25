@@ -1,24 +1,30 @@
-# README
+# ticketfy-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Customer Support Ticket System API made with [Rails](http://rubyonrails.org/) - and ♥.
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+To run this project you need to have:
 
-* System dependencies
+* Ruby 2.3.1 - You can use [RVM](http://rvm.io)
 
-* Configuration
+## Setup the project
 
-* Database creation
+1. Install the dependencies above
+2. `$ git clone https://github.com/roalcantara/ticketfy-api.git` - Clone the project
+3. `$ cd ticketfy-api` - Go into the project folder
+4. `$ bin/setup` - Run the setup script
 
-* Database initialization
+If everything goes OK, you can now run the project!
 
-* How to run the test suite
+## Running the project
 
-* Services (job queues, cache servers, search engines, etc.)
+1. `$ bundle exec rails s` - Opens the server
+2. Open [http://localhost:3000](http://localhost:3000)
 
-* Deployment instructions
+## How to contribute
 
-* ...
+1. Follow the [Semantic Versioning Specification](http://semver.org/)
+2. Follow the [GitHub Flow](https://guides.github.com/introduction/flow/)
+3. Follow the [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message) article and the [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/) post
+4. Use [Commitizen cli](http://commitizen.github.io/cz-cli/) when committing
