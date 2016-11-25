@@ -2,6 +2,7 @@
 
 A Customer Support Ticket System API made with [Rails](http://rubyonrails.org/) - and ♥.
 
+[![CircleCI](https://circleci.com/gh/roalcantara/ticketfy-api.svg?style=shield)](https://circleci.com/gh/roalcantara/ticketfy-api)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 ## Dependencies
