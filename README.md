@@ -2,6 +2,8 @@
 
 A Customer Support Ticket System API made with [Rails](http://rubyonrails.org/) - and ♥.
 
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 ## Dependencies
 
 To run this project you need to have:
@@ -28,3 +30,7 @@ If everything goes OK, you can now run the project!
 2. Follow the [GitHub Flow](https://guides.github.com/introduction/flow/)
 3. Follow the [5 Useful Tips For A Better Commit Message](https://robots.thoughtbot.com/5-useful-tips-for-a-better-commit-message) article and the [How to Write a Git Commit Message](http://chris.beams.io/posts/git-commit/) post
 4. Use [Commitizen cli](http://commitizen.github.io/cz-cli/) when committing
+
+## License
+
+Ticketfy is released under the [MIT License](http://www.opensource.org/licenses/MIT).
