@@ -1,3 +1,5 @@
+require 'json_matchers/rspec'
+
 if ENV['coverage'] == 'on'
   require 'simplecov'
   SimpleCov.start 'rails' do
