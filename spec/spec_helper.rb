@@ -3,6 +3,8 @@ if ENV['coverage'] == 'on'
   SimpleCov.start 'rails' do
     minimum_coverage 100
   end
+  require 'coveralls'
+  Coveralls.wear!
 end
 
 RSpec.configure do |config|
