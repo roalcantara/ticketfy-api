@@ -17,6 +17,7 @@ group :test do
   gem 'vcr',                    '3.0.0'
   gem 'database_cleaner',       '1.5.3'
   gem 'webmock',                '1.22.3'
+  gem 'coveralls',              '0.8.15', require: false
 end
 
 group :development, :test do
