@@ -21,6 +21,7 @@ group :test do
   gem 'database_cleaner',       '1.5.3'
   gem 'webmock',                '1.22.3'
   gem 'coveralls',              '0.8.15', require: false
+  gem 'ffaker',                 '~> 2.2.0'
 end
 
 group :development, :test do
