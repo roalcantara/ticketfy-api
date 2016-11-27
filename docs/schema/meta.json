@@ -1,0 +1,9 @@
+{
+ "description": "A Customer Support Ticket System Rails API",
+ "id": "ticketfy",
+ "links": [{
+   "href": "ticketfy-api.herokuapp.com/api/v1",
+   "rel": "self"
+ }],
+ "title": "Ticketfy"
+}

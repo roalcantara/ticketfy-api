@@ -8,6 +8,7 @@ gem 'rollbar',                    '2.11.3'
 gem 'devise_token_auth',          '~> 0.1.39'
 gem 'omniauth',                   '~> 1.3', '>= 1.3.1'
 gem 'active_model_serializers',   '~> 0.10.3'
+gem 'prmd',                       '~> 0.12.0'
 
 group :development do
   gem 'spring-watcher-listen',    '~> 2.0.0'
