@@ -25,6 +25,7 @@ group :test do
   gem 'coveralls',              '0.8.15', require: false
   gem 'ffaker',                 '~> 2.2.0'  
   gem 'json_matchers',          '~> 0.6.3'
+  gem 'rspec_junit_formatter',  '0.2.2'
 end
 
 group :development, :test do
