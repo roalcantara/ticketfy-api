@@ -14,6 +14,7 @@ RSpec.describe 'Admins' do
     subject { response }
 
     it { is_expected.to have_http_status :ok }
+    it { is_expected.to match_response_schema 'admin' }
   end
 
   describe 'POST /api/v1/admins' do
@@ -30,6 +31,7 @@ RSpec.describe 'Admins' do
       subject { response }
 
       it { is_expected.to have_http_status :created }
+      it { is_expected.to match_response_schema 'admin' }
     end
 
     context 'with invalid params' do
@@ -53,6 +55,7 @@ RSpec.describe 'Admins' do
     subject { response }
 
     it { is_expected.to have_http_status :ok }
+    it { is_expected.to match_response_schema 'admin' }
   end
 
   describe 'PUT /api/v1/admins/:id' do
@@ -69,6 +72,7 @@ RSpec.describe 'Admins' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'admin' }
     end
 
     context 'with invalid params' do
