@@ -20,6 +20,7 @@ RSpec.describe 'Agents' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'agent' }
     end
 
     context 'when current user is not an admin' do
@@ -45,6 +46,7 @@ RSpec.describe 'Agents' do
         subject { response }
 
         it { is_expected.to have_http_status :created }
+        it { is_expected.to match_response_schema 'agent' }
       end
 
       context 'with invalid params' do
@@ -85,6 +87,7 @@ RSpec.describe 'Agents' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'agent' }
     end
 
     context 'when the current user is an agent' do
@@ -93,6 +96,7 @@ RSpec.describe 'Agents' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'agent' }
       end
 
       context 'and the current agent is not the requested agent' do
@@ -119,6 +123,7 @@ RSpec.describe 'Agents' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'agent' }
       end
 
       context 'with invalid params' do
@@ -153,6 +158,7 @@ RSpec.describe 'Agents' do
           subject { response }
 
           it { is_expected.to have_http_status :ok }
+          it { is_expected.to match_response_schema 'agent' }
         end
 
         context 'with invalid params' do
