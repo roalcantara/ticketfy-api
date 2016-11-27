@@ -27,6 +27,9 @@
     },
     "TICKETFY_ADMIN_PASSWORD": {
       "required": true
+    },
+    "TICKETFY_AGENT_PASSWORD": {
+      "required": true
     }
   },
   "formation": {

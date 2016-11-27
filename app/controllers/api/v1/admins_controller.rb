@@ -2,7 +2,7 @@ module Api
   module V1
     class AdminsController < ApplicationController
       before_action :set_admin, only: [:show, :update, :destroy]
-      before_action :authenticate_api_v1_admin!
+      before_action :authenticate_admin!
 
       def index
         @admins = Admin.all
