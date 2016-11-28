@@ -20,6 +20,7 @@ RSpec.describe 'Customers' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'customer' }
     end
 
     context 'when current user is not an admin' do
@@ -45,6 +46,7 @@ RSpec.describe 'Customers' do
         subject { response }
 
         it { is_expected.to have_http_status :created }
+        it { is_expected.to match_response_schema 'customer' }
       end
 
       context 'with invalid params' do
@@ -85,6 +87,7 @@ RSpec.describe 'Customers' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'customer' }
     end
 
     context 'when the current user is an customer' do
@@ -93,6 +96,7 @@ RSpec.describe 'Customers' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'customer' }
       end
 
       context 'and the current customer is not the requested customer' do
@@ -119,6 +123,7 @@ RSpec.describe 'Customers' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'customer' }
       end
 
       context 'with invalid params' do
@@ -153,6 +158,7 @@ RSpec.describe 'Customers' do
           subject { response }
 
           it { is_expected.to have_http_status :ok }
+          it { is_expected.to match_response_schema 'customer' }
         end
 
         context 'with invalid params' do
