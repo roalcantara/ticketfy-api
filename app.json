@@ -30,6 +30,9 @@
     },
     "TICKETFY_AGENT_PASSWORD": {
       "required": true
+    },
+    "TICKETFY_CUSTOMER_PASSWORD": {
+      "required": true
     }
   },
   "formation": {
