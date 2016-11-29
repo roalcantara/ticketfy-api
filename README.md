@@ -5,6 +5,7 @@ A Customer Support Ticket System API made with [Rails](http://rubyonrails.org/) 
 [![CircleCI](https://circleci.com/gh/roalcantara/ticketfy-api.svg?style=shield)](https://circleci.com/gh/roalcantara/ticketfy-api)
 [![Coverage Status](https://coveralls.io/repos/github/roalcantara/ticketfy-api/badge.svg?branch=master)](https://coveralls.io/github/roalcantara/ticketfy-api?branch=master)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Dependencies
 
