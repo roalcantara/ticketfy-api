@@ -6,8 +6,15 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       resources :admins
-      resources :agents
-      resources :customers
+      resources :agents do
+        resources :tickets, only: [:index, :show, :update] do
+          put 'assign', to: 'tickets/assign', on: :member
+        end
+      end
+      resources :customers do
+        resources :tickets
+      end
+      resources :tickets, only: [:index]
     end
   end
 end

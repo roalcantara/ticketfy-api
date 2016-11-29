@@ -8,4 +8,9 @@ RSpec.describe Agent do
     it { is_expected.to validate_presence_of :password }
     it { is_expected.to validate_uniqueness_of(:email).case_insensitive }
   end
+
+  describe 'associations' do
+    it { is_expected.to have_many :tickets }
+    it { is_expected.to have_many(:customers).through :tickets }
+  end
 end
