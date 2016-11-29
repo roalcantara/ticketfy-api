@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161127234116) do
+ActiveRecord::Schema.define(version: 20161128022137) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "provider",                             default: "email", null: false
@@ -94,4 +94,17 @@ ActiveRecord::Schema.define(version: 20161127234116) do
     t.index ["uid", "provider"], name: "index_customers_on_uid_and_provider", unique: true, using: :btree
   end
 
+  create_table "tickets", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "status",      null: false
+    t.string   "description", null: false
+    t.integer  "customer_id", null: false
+    t.integer  "agent_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["agent_id"], name: "index_tickets_on_agent_id", using: :btree
+    t.index ["customer_id"], name: "index_tickets_on_customer_id", using: :btree
+  end
+
+  add_foreign_key "tickets", "agents"
+  add_foreign_key "tickets", "customers"
 end
