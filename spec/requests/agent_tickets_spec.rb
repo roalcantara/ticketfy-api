@@ -25,6 +25,7 @@ RSpec.describe 'Agent/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when the current user is an agent' do
@@ -33,6 +34,7 @@ RSpec.describe 'Agent/Tickets' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'ticket' }
       end
 
       context 'and the current agent is not the requested agent' do
@@ -51,6 +53,7 @@ RSpec.describe 'Agent/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when a updated_at from/to are given' do
@@ -74,6 +77,7 @@ RSpec.describe 'Agent/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'to an already assigned ticket' do
@@ -107,6 +111,7 @@ RSpec.describe 'Agent/Tickets' do
     subject { response }
 
     it { is_expected.to have_http_status :ok }
+    it { is_expected.to match_response_schema 'ticket' }
   end
 
   describe 'PUT /api/v1/agents/:agent_id/tickets/:id' do
@@ -138,6 +143,7 @@ RSpec.describe 'Agent/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'with invalid params' do

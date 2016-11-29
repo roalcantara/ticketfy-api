@@ -22,6 +22,7 @@ RSpec.describe 'Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when current user is an admin' do
@@ -29,6 +30,7 @@ RSpec.describe 'Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when current user is an agent' do
@@ -36,6 +38,7 @@ RSpec.describe 'Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
   end
 end

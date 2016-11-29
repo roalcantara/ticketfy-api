@@ -28,6 +28,7 @@ RSpec.describe 'Customer/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when the current user is a customer' do
@@ -36,6 +37,7 @@ RSpec.describe 'Customer/Tickets' do
         subject { response }
 
         it { is_expected.to have_http_status :ok }
+        it { is_expected.to match_response_schema 'ticket' }
       end
 
       context 'and the current customer is not the requested customer' do
@@ -54,6 +56,7 @@ RSpec.describe 'Customer/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
   end
 
@@ -101,6 +104,7 @@ RSpec.describe 'Customer/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :created }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'with invalid params' do
@@ -125,6 +129,7 @@ RSpec.describe 'Customer/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'when current user is a customer other than the requested customer' do
@@ -138,6 +143,7 @@ RSpec.describe 'Customer/Tickets' do
     subject { response }
 
     it { is_expected.to have_http_status :ok }
+    it { is_expected.to match_response_schema 'ticket' }
   end
 
   describe 'PUT /api/v1/customers/:customer_id/tickets/:id' do
@@ -169,6 +175,7 @@ RSpec.describe 'Customer/Tickets' do
       subject { response }
 
       it { is_expected.to have_http_status :ok }
+      it { is_expected.to match_response_schema 'ticket' }
     end
 
     context 'with invalid params' do
