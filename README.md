@@ -19,8 +19,13 @@ To run this project you need to have:
 1. Install the dependencies above
 2. `$ git clone https://github.com/roalcantara/ticketfy-api.git` - Clone the project
 3. `$ cd ticketfy-api` - Go into the project folder
-4. `$ bin/setup` - Run the setup script
-5. `$ bin/rspec` - Run the specs to see if everything is working fine
+4. `$ bundle exec bin/setup` - Run the setup script
+
+## Running specs and checking coverage
+
+`$ bundle exec rspec spec --format documentation --color` to run the specs.
+
+`$ coverage=on bundle exec rspec spec --format documentation --color` to generate the coverage report then open the file `coverage/index.html` on your browser.
 
 If everything goes OK, you can now run the project!
 
@@ -28,12 +33,6 @@ If everything goes OK, you can now run the project!
 
 1. `$ bundle exec rails s` - Opens the server
 2. Open [http://localhost:3000](http://localhost:3000)
-
-#### Running specs and checking coverage
-
-`$ bundle exec rake spec` to run the specs.
-
-`$ coverage=on bundle exec rake spec` to generate the coverage report then open the file `coverage/index.html` on your browser.
 
 ## How to contribute
 
