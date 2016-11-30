@@ -19,7 +19,8 @@ To run this project you need to have:
 1. Install the dependencies above
 2. `$ git clone https://github.com/roalcantara/ticketfy-api.git` - Clone the project
 3. `$ cd ticketfy-api` - Go into the project folder
-4. `$ bundle exec bin/setup` - Run the setup script
+4. `$ chmod a+x ./bin/db.sh && ./bin/db.sh` - Create the `ticketfy` user on MySQL [root password needed]
+5. `$ bundle exec bin/setup` - Run the setup script
 
 ## Running specs and checking coverage
 
